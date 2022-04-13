@@ -1,11 +1,16 @@
 const myBox = document.getElementById('my-box');
 
-function setColor(color){
-    myBox.style.backgroundColor = color;
+
+function setColor(){
+if (myBox.style.backgroundColor == 'red'){
+    myBox.style.backgroundColor = 'blue';} else {
+        myBox.style.backgroundColor = 'red'
+    }
+  
 }
 
 function onClick(){
-    setColor('blue')
+    setColor();
 
 }
 
